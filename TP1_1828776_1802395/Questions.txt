@@ -1,0 +1,4 @@
+1. Il y a composition entre dresseurs et Polyland, car la classe Polyland ne peux exister sans les dresseurs. Elle est dépendante de ces derniers.
+2. Il y a compostion entre les créatures et Polyland, car la classe Polyland ne peux exister sans les créatures. Elle est dépendante de ces dernières.
+3. Il y a agrégation entre les dresseurs et les créatures, car les créatures peuvent continuer a exister sans les dresseurs, même si les créatures appartiennent aux dresseurs.
+4. Il y a composition entre les créatures et les pouvoirs, car les pouvoirs ne peuvent continuer a exister sans les créatures. Ils sont dépendants de ces dernières.

@@ -1,0 +1,19 @@
+1- Pourquoi la classe AttaqueMagique est-elle une classe abstraite ?
+
+Cette classe fournit des méthodes qui seront héritées par ses classes dérivées
+(AttaqueMagiqueConfusion et AttaqueMagiquePoison). L'attribut durée leurs sera aussi partagé.
+De plus, elle contient une fonction virtuelle pure. Aucun objet ne peut appartenir directement à cette classe.
+
+
+
+2- Dans la classe Créature, quelle(s) méthode(s) avez-vous déclarées virtuelles et pourquoi ?
+
+La méthode void attaquer(const Pouvoir& pouvoir, Creature& creature), puisqu'on voulait faire comprendre au compilateur 
+qu'il fallait utiliser la méthode attaquer de la Classe dérivée CreatureMagique plutôt que celle de la classe de base Creature.
+
+
+
+3- Pourquoi est-il important que les destructeurs de Créature et de CréatureMagique soient virtuels ?
+
+On voudrait faire savoir au compilateur que, lorsqu'il recoit un pointeur sur un objet de la classe dérivée 
+CreatureMagique, qu'il appelle le destructeur de cette dernière et non celle de la classe de base Creature.
